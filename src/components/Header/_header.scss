@@ -1,5 +1,6 @@
 header{
   height: 100vh;
+  overflow: hidden;
   @include media('>=large'){
     overflow: hidden;
   }
@@ -70,6 +71,17 @@ header{
       }
       .adress {
         display: none;
+        @include media('>small', '<=mid'){
+          // position: absolute;
+          // display: block;
+          // z-index: 14;
+          // color:$gold;
+          // text-transform: uppercase;
+          // font-weight: 700;
+          // text-align: right;
+          // right: 0;
+          // margin: 1rem;
+        }
         @include media('>=large'){
           display: block;
           position: absolute;
@@ -106,8 +118,26 @@ header{
           text-transform: uppercase;
           font-size: 0.8rem;
           font-weight: 700;
+          span{
+            display: none;
+            @include media('>small', '<=mid'){
+              display: inline-block;
+            }
+          }
           @include media('>=large'){
             display: none;
+          }
+          @include media('>small', '<=mid'){
+            position: absolute;
+            display: block;
+            z-index: 14;
+            color:$gold;
+            text-transform: uppercase;
+            font-weight: 700;
+            text-align: right;
+            right: 0;
+            margin: 1rem;
+            font-size: 1rem;
           }
         } 
         .navdesk {
@@ -135,6 +165,12 @@ header{
       .logo {
         margin-top: 4rem;
         text-align: center;
+        img{
+          @include media('>small', '<=mid'){
+            width: 300px;
+            height: 300px;
+          }
+        }
         @include media('>=large'){
           position: absolute;
           top: 100px;
@@ -149,6 +185,12 @@ header{
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        @include media('>small', '<=mid'){
+          align-items: flex-end;
+          margin-top: 1rem;
+          padding: 2rem;
+          text-align: center;
+        }
         @include media('>=large'){
           position: absolute;
           z-index: 3;
@@ -163,6 +205,9 @@ header{
           color: $gold;
           padding: 1rem;
           text-shadow: 1px 1px 1px #000;
+          @include media('>small', '<=mid'){
+            font-size: 2rem;
+          }
           @include media('>=large'){
             font-size: 2.8rem;
             letter-spacing: 5px;
@@ -206,6 +251,10 @@ header{
         img {
           width: 60px;
           height: 60px;
+          @include media('>small', '<=mid'){
+            width: 120px;
+            height: 120px;
+          }
           @include media('>=large'){
             width: 80px;
             height: 80px;

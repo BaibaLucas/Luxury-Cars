@@ -13,12 +13,18 @@
       width: 100%;
     }
     .footernav{
+      @include media('>small', '<=mid'){
+        padding: 1rem;
+      }
       @include media('>=large'){
         padding: 15px 0;
         text-align: center;
       }
       ul{
-        
+        @include media('>small', '<=mid'){
+          display: flex;
+          justify-content: space-around;
+        }
         @include media('>=large'){
           list-style-position: inside;
         }
@@ -26,6 +32,10 @@
           padding: 0.4rem 0rem;
           text-transform: uppercase;
           font-weight: 600;
+          @include media('>small', '<=mid'){
+            padding: 1rem;
+            font-size: 1.4rem;
+          }
           @include media('>=large'){
             padding: 0 20px;
             display: inline-block;

@@ -1,6 +1,6 @@
 .menu {
   position: fixed;
-  z-index: 13;
+  z-index: 15;
   height: 100vh;
   width: 75vw;
   top: 0;
@@ -33,6 +33,9 @@
           letter-spacing: 0.2rem;
           text-decoration: none;
           color: $off-white;
+          @include media('>small', '<=mid'){
+            font-size: 1.5rem;
+          }
           &:hover {
             color: $black;
           }
@@ -47,6 +50,11 @@
         height: 120px;
         background: $off-white;
         border-radius: 50%;
+        @include media('>small', '<=mid'){
+          width: 200px;
+          height: 200px;
+          margin-bottom: 10rem;
+        }
       }
     }
   }

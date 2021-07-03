@@ -43,6 +43,9 @@
         font-size: 1.3rem;
         font-weight: 700;
         margin-bottom: 0.5rem;
+        @include media('>small', '<=mid'){
+          font-size: 2rem;
+        }
         @include media('>=large'){
           color: $gold;
           text-transform: uppercase;
@@ -64,6 +67,9 @@
         .titlecoord{
           font-size: 1.2rem;
           font-weight: 600;
+          @include media('>small', '<=mid'){
+            font-size: 1.6rem;
+          }
           @include media('>=large'){
             font-size: 1.4rem;
             padding: 20px 0;
@@ -72,17 +78,26 @@
           }
         }
         .tel{
+          @include media('>small', '<=mid'){
+            font-size: 1.5rem;
+          }
           @include media('>=large'){
             font-size: 1.3rem;
           }
         }
         .adress{
+          @include media('>small', '<=mid'){
+            font-size: 1.5rem;
+          }
           @include media('>=large'){
             font-size: 1.3rem;
           }
         }
         .horaire{
           color: $gold;
+          @include media('>small', '<=mid'){
+            font-size: 1.5rem;
+          }
           @include media('>=large'){
             color: $gold;
             text-transform: uppercase;
@@ -94,9 +109,13 @@
           padding: 0.5rem;
           color: $gold;
           background-color: $black;
-          border-radius: 20px;
+          border-radius: 50px;
           letter-spacing: 2px;
           font-weight: 600;
+          @include media('>small', '<=mid'){
+            font-size: 1.8rem;
+            padding: 1rem;
+          }
           @include media('>=large'){
             color: $gold;
             background-color: $black;

@@ -5,6 +5,8 @@
   position: relative;
   text-align: center;
   height: 100vh;
+  @include media('>small', '<=mid'){
+  }
   @include media('>=large'){
     padding: 2rem;
   }
@@ -17,6 +19,10 @@
     margin-top: 1rem;
     font-weight: 700;
     height: 25%;
+    @include media('>small', '<=mid'){
+      height: auto;
+      margin-bottom: 10rem;
+    }
     @include media('>=large'){
       margin-bottom: 30px;
     }
@@ -29,12 +35,17 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    @include media('>=large'){
-      height: 80%;
+    @include media('>small', '<=mid'){
+      height: 70%;
       padding: 2rem;
-      justify-content: center; 
+    }
+    @include media('>=large'){
     }
     .starsreview{
+      font-size: 2rem;
+      @include media('>small', '<=mid'){
+        font-size: 4rem;
+      }
       @include media('>=large'){
         margin-top: 1rem;
       }
@@ -43,6 +54,9 @@
       color: grey;
       font-style:italic;
       font-size: 1.2rem;
+      @include media('>small', '<=mid'){
+        font-size: 2rem;
+      }
       @include media('>=large'){
         margin-top: 1rem;
       }
@@ -54,6 +68,9 @@
       height: 25%;
       display: flex;
       align-items: center;
+      @include media('>small', '<=mid'){
+        font-size: 2rem;
+      }
       @include media('>=large'){
         font-size: 1.2rem;
         margin-top: 1rem;
@@ -64,6 +81,9 @@
       font-style:italic;
       font-size: 1.2rem;
       margin-bottom: 2rem;
+      @include media('>small', '<=mid'){
+        font-size: 2rem;
+      }
       @include media('>=large'){
         margin-bottom: 1rem;
         margin-top: 1rem;
@@ -82,6 +102,9 @@
       left: 0;
       right: 0;
       bottom: 0;
+      @include media('>small', '<=mid'){
+        font-size: 1.8rem;
+      }
       @include media('>=large'){
         width: 40%;
         padding: 1.5rem;

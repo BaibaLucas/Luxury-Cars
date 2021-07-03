@@ -64,7 +64,7 @@ window.addEventListener('scroll', () => {
         ref={node}>
           <Burger open={open} setOpen={setOpen}/>
           <Menu open={open} setOpen={setOpen}/>
-          <div className='small-adress'> 64, rue du prestige 75116 Paris</div>
+          <div className='small-adress'><span>luxury cars -</span> 64, rue du prestige 75116 Paris</div>
           <nav className='navdesk'>
           <Link to ='/'>Accueil</Link>
           <Link to ='/cars'>Vehicules</Link>
