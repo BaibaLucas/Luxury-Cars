@@ -16,7 +16,7 @@ const Shop = () => {
      <div className='car-container'>
        {cars.map((car) => {
          return <Link to='/cars' className='carcard' key={car.id}>
-           <img className='cardimage' src={car.picture} alt={car.carname} />
+           <img className='cardimage' src={car.picture} alt={car.carname} /> 
            <div className='cardproduct'> {car.carname}</div>
            <div className='cardfinition'> {car.finition}</div>
            <div className="carddetails1">{car.gas} - {car.boite}</div>

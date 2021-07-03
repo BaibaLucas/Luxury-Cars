@@ -7,6 +7,8 @@
   height: 100vh;
   @include media('>small', '<=mid'){
   }
+  @include media('>mid', '<=large'){
+  }
   @include media('>=large'){
     padding: 2rem;
   }
@@ -44,6 +46,9 @@
     .starsreview{
       font-size: 2rem;
       @include media('>small', '<=mid'){
+        font-size: 4rem;
+      }
+      @include media('>mid', '<=large'){
         font-size: 4rem;
       }
       @include media('>=large'){
@@ -84,6 +89,7 @@
       @include media('>small', '<=mid'){
         font-size: 2rem;
       }
+      
       @include media('>=large'){
         margin-bottom: 1rem;
         margin-top: 1rem;
@@ -104,6 +110,10 @@
       bottom: 0;
       @include media('>small', '<=mid'){
         font-size: 1.8rem;
+      }
+      @include media('>mid', '<=large'){
+        width: auto;
+        font-size: 1rem;
       }
       @include media('>=large'){
         width: 40%;

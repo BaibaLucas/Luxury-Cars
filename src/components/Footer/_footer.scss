@@ -2,6 +2,9 @@
   background-color: $black;
   text-align: center;
   color: $off-white;
+  @include media('>mid', '<=large'){
+    
+  }
   @include media('>=large'){
     position: relative;
   }
@@ -16,17 +19,22 @@
       @include media('>small', '<=mid'){
         padding: 1rem;
       }
+      @include media('>mid', '<=large'){
+        padding: 1rem;
+      }
       @include media('>=large'){
-        padding: 15px 0;
-        text-align: center;
       }
       ul{
         @include media('>small', '<=mid'){
           display: flex;
           justify-content: space-around;
         }
+        @include media('>mid', '<=large'){
+          display: flex;
+          justify-content: space-around;
+        }
         @include media('>=large'){
-          list-style-position: inside;
+          
         }
         li{
           padding: 0.4rem 0rem;
@@ -35,6 +43,9 @@
           @include media('>small', '<=mid'){
             padding: 1rem;
             font-size: 1.4rem;
+          }
+          @include media('>mid', '<=large'){
+            padding: 1rem;
           }
           @include media('>=large'){
             padding: 0 20px;

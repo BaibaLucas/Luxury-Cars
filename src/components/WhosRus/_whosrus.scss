@@ -1,6 +1,8 @@
 .whosrus{
   position: relative;
   background-color: $off-white;
+  @include media('>mid', '<=large'){
+  }
   @include media('>=large'){
     position: relative;
     background-color: $off-white;
@@ -46,6 +48,9 @@
         @include media('>small', '<=mid'){
           font-size: 2rem;
         }
+        @include media('>mid', '<=large'){
+          font-size: 2rem;
+        }
         @include media('>=large'){
           color: $gold;
           text-transform: uppercase;
@@ -70,6 +75,9 @@
           @include media('>small', '<=mid'){
             font-size: 1.6rem;
           }
+          @include media('>mid', '<=large'){
+            font-size: 1.4rem;
+          }
           @include media('>=large'){
             font-size: 1.4rem;
             padding: 20px 0;
@@ -81,6 +89,9 @@
           @include media('>small', '<=mid'){
             font-size: 1.5rem;
           }
+          @include media('>mid', '<=large'){
+            font-size: 1.3rem;
+          }
           @include media('>=large'){
             font-size: 1.3rem;
           }
@@ -88,6 +99,9 @@
         .adress{
           @include media('>small', '<=mid'){
             font-size: 1.5rem;
+          }
+          @include media('>mid', '<=large'){
+            font-size: 1.3rem;
           }
           @include media('>=large'){
             font-size: 1.3rem;
@@ -97,6 +111,9 @@
           color: $gold;
           @include media('>small', '<=mid'){
             font-size: 1.5rem;
+          }
+          @include media('>mid', '<=large'){
+            font-size: 1.3rem;
           }
           @include media('>=large'){
             color: $gold;
@@ -115,6 +132,11 @@
           @include media('>small', '<=mid'){
             font-size: 1.8rem;
             padding: 1rem;
+          }
+          @include media('>mid', '<=large'){
+            font-size: 1rem;
+            padding: 1rem;
+            width: auto;
           }
           @include media('>=large'){
             color: $gold;
