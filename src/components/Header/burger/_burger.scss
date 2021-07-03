@@ -9,6 +9,9 @@
   @include media('>mid', '<=large'){
     display: none;
   }
+  @include media('>large', '<=extra'){
+    display: none;
+  }
   span{
     width: 2rem;
     height: 0.25rem;

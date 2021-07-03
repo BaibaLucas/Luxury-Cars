@@ -3,22 +3,17 @@ section {
   padding: 0.5rem 1rem;
   @include media('>mid', '<=large'){
   }
-  @include media('>=large'){
+  @include media('>large', '<=extra'){
   }
   .home-container {
-    @include media('>=large'){
+    @include media('>large', '<=extra'){
       margin: 2rem;
     }
     .easyreturn {
-      @include media('>=large'){
+      @include media('>large', '<=extra'){
         padding: 2rem;
       }
       .easyreturntext {
-        
-        @include media('>=large'){
-          display: inline-block;
-          padding: 5px;
-        }
         a{
           color: $gold;
           font-size: 0.8rem;
@@ -28,17 +23,14 @@ section {
           @include media('>mid', '<=large'){
             font-size:1rem;
           }
-          @include media('>=large'){
-            padding: 2px;
-            text-decoration: none;
+          @include media('>large', '<=extra'){
+            font-size:1rem;
             cursor: pointer;
           }
         }
       }
     }
     .indexDiv {
-      @include media('>=large'){
-      }
       .article-title {
         text-transform: uppercase;
         color: $gold;
@@ -51,16 +43,14 @@ section {
         @include media('>small', '<=mid'){
           font-size: 1.6rem;  
         }
-        @include media('>=large'){
-          letter-spacing: 3px;
-          padding: 2rem;
-          font-size: 1.8rem;
+        @include media('>large', '<=extra'){
+          font-size: 1.6rem; 
         }
       }
       .article-content {
         color: $off-white;
         padding: 1rem;
-        @include media('>=large'){
+        @include media('>large', '<=extra'){
           padding: 2rem;
         }
         .title-content {
@@ -70,20 +60,17 @@ section {
           @include media('>small', '<=mid'){
             font-size: 1.3rem;  
           }
-          @include media('>=large'){
-            font-size: 1.2rem;
-            font-weight: 700;
+          @include media('>large', '<=extra'){
+            font-size: 1.3rem; 
           }
         }
         p {
             text-align: justify;
             @include media('>small', '<=mid'){
               font-size: 1.1rem;  
-            }
-          @include media('>=large'){
           }
         }
       }
-    }
+    } 
   }
 }

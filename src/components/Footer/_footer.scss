@@ -3,18 +3,11 @@
   text-align: center;
   color: $off-white;
   @include media('>mid', '<=large'){
-    
-  }
-  @include media('>=large'){
-    position: relative;
   }
   .container{
     display: flex;
     flex-direction: column;
     padding-top: 0.5rem;
-    @include media('>=large'){
-      width: 100%;
-    }
     .footernav{
       @include media('>small', '<=mid'){
         padding: 1rem;
@@ -22,7 +15,8 @@
       @include media('>mid', '<=large'){
         padding: 1rem;
       }
-      @include media('>=large'){
+      @include media('>large', '<=extra'){
+        padding: 1rem;
       }
       ul{
         @include media('>small', '<=mid'){
@@ -33,8 +27,9 @@
           display: flex;
           justify-content: space-around;
         }
-        @include media('>=large'){
-          
+        @include media('>large', '<=extra'){
+          display: flex;
+          justify-content: space-around;
         }
         li{
           padding: 0.4rem 0rem;
@@ -47,33 +42,22 @@
           @include media('>mid', '<=large'){
             padding: 1rem;
           }
-          @include media('>=large'){
-            padding: 0 20px;
-            display: inline-block;
+          @include media('>large', '<=extra'){
+            padding: 1rem;
           }
           a{
             color: $off-white;
             text-decoration: none;
-          @include media('>=large'){
-          }
           }
         }
       }
     }
     .arrow-up{
       text-align: center;
-      @include media('>=large'){
-        left: 0;
-        right: 0;
-        margin: auto;
-        bottom: 30px;
-        z-index: 3;
-        cursor: pointer;
-      }
       img{
         width: 60px;
         height: 60px;
-        @include media('>=large'){
+        @include media('>large', '<=extra'){
           width: 80px;
           height: 80px;
         }

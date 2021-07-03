@@ -3,11 +3,8 @@
   text-align: center;
   padding: 1rem 0.5rem 2rem 0.5rem;
   height: 100%;
-  @include media('>=large'){
-    position: relative;
-    background-color: $off-white;
-    padding: 50px 0;
-    text-align: center;
+  @include media('>large', '<=extra'){
+    padding: 2rem;
   }
   .titlebot{
       color: $gold;
@@ -22,15 +19,9 @@
       @include media('>mid', '<=large'){
         font-size: 2rem;  
       }
-      
-    @include media('>=large'){
-      color: $gold;
-      text-transform: uppercase;
-      letter-spacing: 2px;
-      font-size: 2rem;
-      margin-bottom: 30px;
-      font-weight: 700;
-    } 
+      @include media('>large', '<=extra'){
+        font-size: 2rem;
+      }
   }
   .car-container{
     width: 100%;
@@ -46,7 +37,10 @@
       flex-wrap: wrap;
       justify-content: space-between;
     }
-    @include media('>=large'){
+    @include media('>large', '<=extra'){
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
     }
     .carcard{
       width: 100%;
@@ -62,7 +56,9 @@
         width: 25%;
         margin: 2rem;
       }
-      @include media('>=large'){
+      @include media('>large', '<=extra'){
+        width: 25%;
+        margin: 2rem;
       }
       .cardimage{
         width: 100%;
@@ -76,11 +72,6 @@
         @include media('>small', '<=mid'){
           font-size: 1.4rem;
         }
-        @include media('>=large'){
-          padding: 1rem;
-          color: $gold;
-          font-weight: bold;
-        }
       }
       .cardfinition{
         text-transform: uppercase;
@@ -89,10 +80,6 @@
         @include media('>small', '<=mid'){
           font-size: 1.4rem;
         }
-        @include media('>=large'){
-          font-style:italic;
-          padding-bottom: 1rem;
-        }
       }
       .carddetails1{
         font-size: 0.9rem;
@@ -100,18 +87,11 @@
         @include media('>small', '<=mid'){
           font-size: 1.4rem;
         }
-        @include media('>=large'){
-          font-size: 0.9rem;
-          padding-bottom: 1rem;
-        }
       }
       .carddetails2{
         font-weight: bold;
         @include media('>small', '<=mid'){
           font-size: 1.4rem;
-        }
-        @include media('>=large'){
-          font-weight: bold;
         }
       }
     }
@@ -128,25 +108,10 @@
     @include media('>small', '<=mid'){
       font-size: 1.8rem;
     }
-    @include media('>=large'){
-      background-color: $black;
-      color: $gold;
-      padding: 2rem;
-      letter-spacing: 4px;
-      text-transform: uppercase;
-      font-weight: 700;
-      border-radius: 40px;
-    }
-    
     &:hover{
       color: $black;
       background-color: $gold;
       transition: 0.5s;
-      @include media('>=large'){
-        color: $black;
-        background-color: $gold;
-        transition: 0.5s;
-      }
     }
   }
 }

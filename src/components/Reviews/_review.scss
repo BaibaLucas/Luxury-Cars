@@ -9,10 +9,8 @@
   }
   @include media('>mid', '<=large'){
   }
-  @include media('>=large'){
-    padding: 2rem;
+  @include media('>large', '<=extra'){
   }
-  
   .titlereviews{
     color: $gold;
     text-transform: uppercase;
@@ -24,9 +22,6 @@
     @include media('>small', '<=mid'){
       height: auto;
       margin-bottom: 10rem;
-    }
-    @include media('>=large'){
-      margin-bottom: 30px;
     }
   }
   .reviews-container{
@@ -41,8 +36,6 @@
       height: 70%;
       padding: 2rem;
     }
-    @include media('>=large'){
-    }
     .starsreview{
       font-size: 2rem;
       @include media('>small', '<=mid'){
@@ -51,8 +44,8 @@
       @include media('>mid', '<=large'){
         font-size: 4rem;
       }
-      @include media('>=large'){
-        margin-top: 1rem;
+      @include media('>large', '<=extra'){
+        font-size: 4rem;
       }
     }
     .datereview{
@@ -61,9 +54,6 @@
       font-size: 1.2rem;
       @include media('>small', '<=mid'){
         font-size: 2rem;
-      }
-      @include media('>=large'){
-        margin-top: 1rem;
       }
     }
     .contentreview{
@@ -76,10 +66,6 @@
       @include media('>small', '<=mid'){
         font-size: 2rem;
       }
-      @include media('>=large'){
-        font-size: 1.2rem;
-        margin-top: 1rem;
-      }
     }
     .authorreview{
       color: $off-white;
@@ -88,11 +74,6 @@
       margin-bottom: 2rem;
       @include media('>small', '<=mid'){
         font-size: 2rem;
-      }
-      
-      @include media('>=large'){
-        margin-bottom: 1rem;
-        margin-top: 1rem;
       }
     }
     .allreviews{
@@ -115,15 +96,12 @@
         width: auto;
         font-size: 1rem;
       }
-      @include media('>=large'){
-        width: 40%;
-        padding: 1.5rem;
-        letter-spacing: 4px;
-        border-radius: 40px;
-        margin-top: 1rem;
+      @include media('>large', '<=extra'){
+        width: auto;
+        font-size: 1rem;
       }
       &:hover{
-        @include media('>=large'){
+        @include media('>large', '<=extra'){
           color: $gold;
           background-color: $black;
           transition: 0.5s;
