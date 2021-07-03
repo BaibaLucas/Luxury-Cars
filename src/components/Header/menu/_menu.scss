@@ -1,0 +1,57 @@
+.menu {
+  position: fixed;
+  z-index: 13;
+  height: 100vh;
+  width: 75vw;
+  top: 0;
+  left: 0;
+  background-image: url('../../../assets/images/carbonfiber.jpg');
+  transition: transform 0.3s ease-in-out;
+  transform: translateX(-100%);
+  .menunav{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    .menulist{
+      height: 50%;
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+      .itemlist{
+        width: 100%;
+        &:hover {
+          background-color: $off-white;
+        }
+        a {
+          width: 100%;
+          display: block;
+          text-transform: uppercase;
+          padding: 1.2rem 1rem;
+          font-weight: bold;
+          letter-spacing: 0.2rem;
+          text-decoration: none;
+          color: $off-white;
+          &:hover {
+            color: $black;
+          }
+        }
+      }
+    }
+    .navlogo{
+      text-align: center;
+      margin-bottom: 1rem;
+      img{
+        width: 120px;
+        height: 120px;
+        background: $off-white;
+        border-radius: 50%;
+      }
+    }
+  }
+  &.active{
+    transform: translateX(0%);
+  }
+  
+};

@@ -1,0 +1,75 @@
+section {
+  background-image: url('../../assets/images/carbonfiber.jpg');
+  padding: 0.5rem 1rem;
+@include media('>=large'){
+  background-image: url('../../assets/images/carbonfiber.jpg');
+  padding: 50px 0px;
+  display: block;
+}
+  .home-container {
+    @include media('>=large'){
+      margin: 2rem;
+    }
+    .easyreturn {
+      @include media('>=large'){
+        padding: 2rem;
+      }
+      .easyreturntext {
+        
+        @include media('>=large'){
+          display: inline-block;
+          padding: 5px;
+        }
+        a{
+          color: $gold;
+          font-size: 0.8rem;
+          @include media('>=large'){
+            padding: 2px;
+            text-decoration: none;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .indexDiv {
+      @include media('>=large'){
+      }
+      .article-title {
+        text-transform: uppercase;
+        color: $gold;
+        letter-spacing: 1px;
+        text-align: center;
+        font-weight: 700;
+        padding: 2rem 0.5rem;
+        line-height: 2rem;
+        font-size: 1.4rem;
+        @include media('>=large'){
+          letter-spacing: 3px;
+          padding: 2rem;
+          font-size: 1.8rem;
+        }
+      }
+      .article-content {
+        color: $off-white;
+        padding: 1rem;
+        @include media('>=large'){
+          padding: 2rem;
+        }
+        .title-content {
+          font-size: 1.1rem;
+          color: $gold;
+          font-weight: 600;
+          @include media('>=large'){
+            font-size: 1.2rem;
+            font-weight: 700;
+          }
+        }
+        p {
+            text-align: justify;
+          @include media('>=large'){
+          }
+        }
+      }
+    }
+  }
+}
