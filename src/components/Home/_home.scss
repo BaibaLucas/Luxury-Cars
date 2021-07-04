@@ -1,9 +1,8 @@
 section {
   background-image: url('../../assets/images/carbonfiber.jpg');
   padding: 0.5rem 1rem;
-  @include media('>mid', '<=large'){
-  }
-  @include media('>large', '<=extra'){
+  @include media('>mid'){
+    padding: 5rem;
   }
   .home-container {
     @include media('>large', '<=extra'){
@@ -17,14 +16,8 @@ section {
         a{
           color: $gold;
           font-size: 0.8rem;
-          @include media('>small', '<=mid'){
+          @include media('>small'){
             font-size: 1rem;
-          }
-          @include media('>mid', '<=large'){
-            font-size:1rem;
-          }
-          @include media('>large', '<=extra'){
-            font-size:1rem;
             cursor: pointer;
           }
         }
@@ -40,11 +33,8 @@ section {
         padding: 2rem 0.5rem;
         line-height: 2rem;
         font-size: 1.4rem;
-        @include media('>small', '<=mid'){
+        @include media('>small'){
           font-size: 1.6rem;  
-        }
-        @include media('>large', '<=extra'){
-          font-size: 1.6rem; 
         }
       }
       .article-content {
@@ -57,11 +47,8 @@ section {
           font-size: 1.1rem;
           color: $gold;
           font-weight: 600;
-          @include media('>small', '<=mid'){
+          @include media('>small'){
             font-size: 1.3rem;  
-          }
-          @include media('>large', '<=extra'){
-            font-size: 1.3rem; 
           }
         }
         p {

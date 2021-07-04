@@ -2,32 +2,16 @@
   background-color: $black;
   text-align: center;
   color: $off-white;
-  @include media('>mid', '<=large'){
-  }
   .container{
     display: flex;
     flex-direction: column;
     padding-top: 0.5rem;
     .footernav{
-      @include media('>small', '<=mid'){
-        padding: 1rem;
-      }
-      @include media('>mid', '<=large'){
-        padding: 1rem;
-      }
-      @include media('>large', '<=extra'){
+      @include media('>small'){
         padding: 1rem;
       }
       ul{
-        @include media('>small', '<=mid'){
-          display: flex;
-          justify-content: space-around;
-        }
-        @include media('>mid', '<=large'){
-          display: flex;
-          justify-content: space-around;
-        }
-        @include media('>large', '<=extra'){
+        @include media('>small'){
           display: flex;
           justify-content: space-around;
         }
@@ -39,15 +23,16 @@
             padding: 1rem;
             font-size: 1.4rem;
           }
-          @include media('>mid', '<=large'){
-            padding: 1rem;
-          }
-          @include media('>large', '<=extra'){
+          @include media('>mid'){
             padding: 1rem;
           }
           a{
             color: $off-white;
             text-decoration: none;
+            &:hover{
+              border-bottom: solid $off-white 2px;
+              padding-bottom: 2px;
+            }
           }
         }
       }
@@ -57,12 +42,12 @@
       img{
         width: 60px;
         height: 60px;
-        @include media('>large', '<=extra'){
+        cursor: pointer;
+        @include media('>large'){
           width: 80px;
           height: 80px;
         }
       }
-
     }
   }
 }

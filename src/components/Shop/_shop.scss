@@ -3,7 +3,7 @@
   text-align: center;
   padding: 1rem 0.5rem 2rem 0.5rem;
   height: 100%;
-  @include media('>large', '<=extra'){
+  @include media('>large'){
     padding: 2rem;
   }
   .titlebot{
@@ -13,14 +13,8 @@
       font-size: 1.5rem;
       font-weight: 700;
       margin-bottom: 1rem;
-      @include media('>small', '<=mid'){
+      @include media('>small'){
         font-size: 2rem;  
-      }
-      @include media('>mid', '<=large'){
-        font-size: 2rem;  
-      }
-      @include media('>large', '<=extra'){
-        font-size: 2rem;
       }
   }
   .car-container{
@@ -30,14 +24,7 @@
     flex-direction: column;
     justify-content: space-around;
     margin-bottom: 1.5rem;
-    @include media('>small', '<=mid'){
-    }
-    @include media('>mid', '<=large'){
-      flex-direction: row;
-      flex-wrap: wrap;
-      justify-content: space-between;
-    }
-    @include media('>large', '<=extra'){
+    @include media('>mid'){
       flex-direction: row;
       flex-wrap: wrap;
       justify-content: space-between;
@@ -52,20 +39,18 @@
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      @include media('>mid', '<=large'){
+      @include media('>mid'){
         width: 25%;
         margin: 2rem;
       }
-      @include media('>large', '<=extra'){
-        width: 25%;
-        margin: 2rem;
+      &:hover{
+        box-shadow: 0 0 3rem rgba(33,33,33,.6);
       }
       .cardimage{
         width: 100%;
         height: 100%;
       }
       .cardproduct{
-        
         padding: 1rem;
         color: $gold;
         font-weight: bold;
@@ -105,8 +90,12 @@
     letter-spacing: 1px;
     margin-bottom: 1rem;
     font-weight: 700;
+    font-size: 0.8rem;
     @include media('>small', '<=mid'){
       font-size: 1.8rem;
+    }
+    @include media('>mid'){
+      font-size: 1rem;
     }
     &:hover{
       color: $black;

@@ -21,7 +21,8 @@
       text-align: center;
       .itemlist{
         width: 100%;
-        &:hover {
+        .activeBg{
+          color: $black;
           background-color: $off-white;
         }
         a {
@@ -35,9 +36,6 @@
           color: $off-white;
           @include media('>small', '<=mid'){
             font-size: 1.5rem;
-          }
-          &:hover {
-            color: $black;
           }
         }
       }

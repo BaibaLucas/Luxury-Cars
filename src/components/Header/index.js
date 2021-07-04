@@ -1,6 +1,6 @@
 // Package import
 import React, { useRef, useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import { Link as Scroll } from 'react-scroll';
 
 // Local import
@@ -66,13 +66,13 @@ window.addEventListener('scroll', () => {
           <Menu open={open} setOpen={setOpen}/>
           <div className='small-adress'><span>luxury cars -</span> 64, rue du prestige 75116 Paris</div>
           <nav className='navdesk'>
-          <Link to ='/'>Accueil</Link>
-          <Link to ='/cars'>Vehicules</Link>
-          <Link to ='/services'>Services</Link>
-          <Link to ='/workshop'>Atelier</Link>
-          <Link to ='/actu'>Actualites</Link>
-          <Link to ='/partner'>Partenaires</Link>
-          <Link to ='/contact'>Contact</Link>
+          <NavLink activeClassName='activeBg' exact to ='/'>Accueil</NavLink>
+          <NavLink activeClassName='activeBg' exact to ='/cars'>Vehicules</NavLink>
+          <NavLink activeClassName='activeBg' exact to ='/services'>Services</NavLink>
+          <NavLink activeClassName='activeBg' exact to ='/workshop'>Atelier</NavLink>
+          <NavLink activeClassName='activeBg' exact to ='/actu'>Actualites</NavLink>
+          <NavLink activeClassName='activeBg' exact to ='/partner'>Partenaires</NavLink>
+          <NavLink activeClassName='activeBg' exact to ='/contact'>Contact</NavLink>
           </nav>
         </div>
         <div className='logo'>    

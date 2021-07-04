@@ -5,11 +5,9 @@
   position: relative;
   text-align: center;
   height: 100vh;
-  @include media('>small', '<=mid'){
-  }
-  @include media('>mid', '<=large'){
-  }
-  @include media('>large', '<=extra'){
+  @include media('>large'){
+    height: auto;
+    padding: 5rem 5rem 5rem 5rem;
   }
   .titlereviews{
     color: $gold;
@@ -22,6 +20,9 @@
     @include media('>small', '<=mid'){
       height: auto;
       margin-bottom: 10rem;
+    }
+    @include media('>large'){
+      margin-bottom: 5rem;
     }
   }
   .reviews-container{
@@ -38,14 +39,11 @@
     }
     .starsreview{
       font-size: 2rem;
-      @include media('>small', '<=mid'){
+      @include media('>small'){
         font-size: 4rem;
       }
-      @include media('>mid', '<=large'){
-        font-size: 4rem;
-      }
-      @include media('>large', '<=extra'){
-        font-size: 4rem;
+      @include media('>large'){
+        margin-bottom: 2rem;
       }
     }
     .datereview{
@@ -54,6 +52,9 @@
       font-size: 1.2rem;
       @include media('>small', '<=mid'){
         font-size: 2rem;
+      }
+      @include media('>large'){
+        margin-bottom: 1rem;
       }
     }
     .contentreview{
@@ -65,6 +66,9 @@
       align-items: center;
       @include media('>small', '<=mid'){
         font-size: 2rem;
+      }
+      @include media('>large'){
+        margin-bottom: 2rem;
       }
     }
     .authorreview{
@@ -92,16 +96,12 @@
       @include media('>small', '<=mid'){
         font-size: 1.8rem;
       }
-      @include media('>mid', '<=large'){
-        width: auto;
-        font-size: 1rem;
-      }
-      @include media('>large', '<=extra'){
+      @include media('>mid'){
         width: auto;
         font-size: 1rem;
       }
       &:hover{
-        @include media('>large', '<=extra'){
+        @include media('>large'){
           color: $gold;
           background-color: $black;
           transition: 0.5s;

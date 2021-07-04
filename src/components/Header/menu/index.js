@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 import Logo from '../../../assets/logo/lclogo.png';
 
@@ -13,31 +13,31 @@ const Menu = ({ open, setOpen }) => {
       <nav className='menunav'>
       <ul className='menulist'>
         <li className='itemlist'>
-          <Link onClick={close} to ='/'>Accueil</Link>
+          <NavLink activeClassName='activeBg' onClick={close} exact to='/'>Accueil</NavLink>
         </li>
         <li className='itemlist'>
-          <Link onClick={close} to ='/cars'>Vehicules</Link>
+          <NavLink activeClassName='activeBg' onClick={close} exact to ='/cars'>Vehicules</NavLink>
         </li>
         <li className='itemlist'>
-          <Link onClick={close} to ='/services'>Services</Link>
+          <NavLink activeClassName='activeBg' onClick={close} exact to ='/services'>Services</NavLink>
         </li>
         <li className='itemlist'>
-          <Link onClick={close} to ='/workshop'>Atelier</Link>
+          <NavLink activeClassName='activeBg' onClick={close} exact to ='/workshop'>Atelier</NavLink>
         </li>
         <li className='itemlist'>
-          <Link onClick={close} to ='/actu'>Actualites</Link>
+          <NavLink activeClassName='activeBg' onClick={close} exact to ='/actu'>Actualites</NavLink>
         </li>
         <li className='itemlist'>
-          <Link onClick={close} to ='/partner'>Partenaires</Link>
+          <NavLink activeClassName='activeBg' onClick={close} exact to ='/partner'>Partenaires</NavLink>
         </li>
         <li className='itemlist'>
-          <Link onClick={close} to ='/contact'>Contact</Link>
+          <NavLink activeClassName='activeBg' onClick={close} exact to ='/contact'>Contact</NavLink>
         </li>
       </ul>
       <div className='navlogo'>
-        <Link onClick={close} to ='/'>
+        <NavLink onClick={close} to ='/'>
           <img src={Logo} alt='LuxuryCars Logo'></img>
-        </Link>
+        </NavLink>
       </div>
       </nav>
       
