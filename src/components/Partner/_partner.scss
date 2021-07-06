@@ -1,0 +1,112 @@
+.partner {
+  background-image: url('../../assets/images/carbonfiber.jpg');
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+  @include media('>mid'){
+    // padding: 2rem 5rem 5rem 2rem;
+  }
+  .partner-container{
+  .easyreturn {
+    @include media('>large', '<=extra'){
+      padding: 2rem;
+    }
+    .easyreturntext {
+      a{
+        color: $gold;
+        font-size: 0.8rem;
+        @include media('>small'){
+          font-size: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .indexDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    .partner-title{
+      text-transform: uppercase;
+      color: $gold;
+      letter-spacing: 1px;
+      text-align: center;
+      font-weight: 700;
+      padding: 1rem 0.5rem;
+      line-height: 2rem;
+      font-size: 1.4rem;
+      @include media('>small'){
+        font-size: 1.6rem;
+      }
+    }
+    .partner-desc{
+      color: $off-white;
+      font-weight: 700;
+      text-align: justify;
+      margin: 1rem 0rem;
+    }
+    .partner-nav{
+      @include media('>mid'){
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .partner-card{
+        display: flex;
+        justify-content: right;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        border: solid 2px $gold;
+        text-decoration: none;
+        color: $gold;
+        border-radius: 50px;
+        margin-bottom: 1rem;
+        padding: 0.5rem;
+        @include media('>mid', '<=large'){
+          width: 45%;
+          margin: 1rem;
+          padding: 2rem;
+        }
+        @include media('>large'){
+          margin: 1rem;
+          width: 45%;
+        }
+        &:hover{
+          background-color: rgba(255,255,255,0.4);
+        }
+        .partnerimage{
+          width: 100px;
+          height: 100px;
+          background-color: rgba(255,255,255,0.4);
+          border-radius: 20px;
+          @include media('>small', '<=mid'){
+          margin: 0rem 2rem;
+          }
+        }
+        .partnerinfo{
+          display:flex;
+          flex-direction: column;
+          justify-content: space-around;
+          margin: 1rem;
+          .partnername{
+            font-weight: 700;
+            font-size: 1.2rem;
+            margin: 0.5rem 0rem;
+          }
+          .partnertitle{
+            font-weight: 700;
+            font-style: italic;
+            font-size: 1.1rem;
+            margin: 0.5rem 0rem;
+          }
+          .partnerdesc{
+            color: $off-white;
+            text-align: justify;
+          }
+        }
+      }
+    }
+  }
+}
+}

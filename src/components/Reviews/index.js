@@ -1,7 +1,7 @@
 // Package import
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
-import { AiFillStar, AiOutlineStar } from 'react-icons/ai';
+
 
 
 // Local import
@@ -11,7 +11,6 @@ import { StarsRev } from '../../utils/utils';
 
 
 const Reviews = () => {
-// https://stackoverflow.com/questions/65840192/loop-through-an-array-and-show-single-item-at-a-time-with-dynamic-time-duration
   const [review, setReview] = useState(reviews[0]);
   const [index, setIndex] = useState(0);
 

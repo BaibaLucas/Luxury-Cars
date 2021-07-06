@@ -1,0 +1,121 @@
+.contact {
+  background-image: url('../../assets/images/carbonfiber.jpg');
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+  @include media('>mid'){
+  }
+  .contact-container{
+    .easyreturn {
+    @include media('>large', '<=extra'){
+      padding: 2rem;
+    }
+      .easyreturntext {
+        a{
+          color: $gold;
+          font-size: 0.8rem;
+          @include media('>small'){
+          font-size: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .indexDiv{
+    @include media('>small', '<=mid'){
+      padding: 0rem 2rem;
+    }
+    @include media('>mid', '<=large'){
+    }
+    .contact-title{
+      text-transform: uppercase;
+      color: $gold;
+      letter-spacing: 1px;
+      text-align: center;
+      font-weight: 700;
+      padding: 1rem 0.5rem;
+      line-height: 2rem;
+      font-size: 1.4rem;
+      @include media('>small'){
+        font-size: 1.6rem;
+      }
+    }
+    .contact-desc{
+      color: $off-white;
+      font-weight: 700;
+      text-align: justify;
+      margin: 1rem 0rem;
+    }
+    .contact-form{
+      display: flex;
+      flex-direction: column;
+      @include media('>mid'){
+        flex-direction: row;
+      }
+      .part-one{
+        display: flex;
+        flex-direction: column;
+        @include media('>mid'){
+          width: 50%;
+          margin: 0rem 1rem;
+        }
+      }
+      .part-two{
+        display: flex;
+        flex-direction: column;
+        @include media('>mid'){
+          width: 50%;
+          margin: 0rem 1rem;
+        }
+      }
+      .contact-formlabel{
+        color: $off-white;
+        margin: 0.3rem 0rem;
+        font-size: 0.8rem;
+      }
+      .contact-forminput{
+        margin-bottom: 0.5rem;
+        padding: 0.5rem;
+      }
+      textarea{
+        height: 250px;
+        resize: none;
+      }
+      .button-form{
+        font-size: 1.1rem;
+        color: $black;
+        background-color: $gold;
+        border: none;
+        border-radius: 50px;
+        margin-top: 0.5rem;
+        text-transform: uppercase;
+        padding: 0.5rem;
+        font-weight: 700;
+      }
+    }
+    .adress{
+      margin: 1rem 0rem;
+      color: $black;
+      background-color: $off-white;
+      text-align: center;
+      padding: 1rem;
+      font-size: 1.3rem;
+      .name{
+        text-transform: uppercase;
+        color: $gold;
+        font-weight: 700;
+        margin: 0.5rem;
+      }
+      .adresscomp{
+        margin: 0.5rem;
+        
+      }
+      .phone{
+        color: $gold;
+        font-weight: 700;
+        font-size: 1.2rem;
+        margin: 0.5rem;
+      }
+    }
+  }
+}
+}

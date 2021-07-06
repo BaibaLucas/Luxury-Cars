@@ -1,6 +1,7 @@
-section {
+.home {
   background-image: url('../../assets/images/carbonfiber.jpg');
   padding: 0.5rem 1rem;
+  overflow: hidden;
   @include media('>mid'){
     padding: 5rem;
   }

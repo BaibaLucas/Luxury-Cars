@@ -25,7 +25,7 @@ const Menu = ({ open, setOpen }) => {
           <NavLink activeClassName='activeBg' onClick={close} exact to ='/workshop'>Atelier</NavLink>
         </li>
         <li className='itemlist'>
-          <NavLink activeClassName='activeBg' onClick={close} exact to ='/actu'>Actualites</NavLink>
+          <NavLink activeClassName='activeBg' onClick={close} exact to ='/actuality'>Actualites</NavLink>
         </li>
         <li className='itemlist'>
           <NavLink activeClassName='activeBg' onClick={close} exact to ='/partner'>Partenaires</NavLink>

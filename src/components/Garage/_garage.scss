@@ -1,0 +1,67 @@
+.garage {
+  background-image: url('../../assets/images/carbonfiber.jpg');
+  padding: 0.5rem 1rem;
+  overflow: hidden;
+  @include media('>mid'){
+    padding: 5rem;
+  }
+  .garage-container{
+
+  }
+  .easyreturn {
+    @include media('>large', '<=extra'){
+      padding: 2rem;
+    }
+    .easyreturntext {
+      a{
+        color: $gold;
+        font-size: 0.8rem;
+        @include media('>small'){
+          font-size: 1rem;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .indexDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    .garage-title{
+      text-transform: uppercase;
+      color: $gold;
+      letter-spacing: 1px;
+      text-align: center;
+      font-weight: 700;
+      padding: 2Rem 0.5rem;
+      line-height: 2rem;
+      font-size: 1.4rem;
+      @include media('>small'){
+        font-size: 1.6rem;
+      }
+    }
+    .garage-desc{
+      color: $off-white;
+      font-weight: 700;
+      text-align: justify;
+      margin: 1rem 0rem;
+    }
+    .garage-content{
+      color: $off-white;
+      text-align: justify;
+      margin-bottom: 1rem;
+    }
+    a{
+      font-size: 1.1rem;
+      color: $black;
+      background-color: $gold;
+      border: none;
+      border-radius: 50px;
+      margin-top: 0.5rem;
+      text-transform: uppercase;
+      padding: 0.5rem;
+      font-weight: 700;
+    }
+  }
+}

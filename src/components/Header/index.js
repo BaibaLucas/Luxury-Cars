@@ -19,10 +19,6 @@ const Header = () => {
 // Node Element
 const elementRef = useRef();
 const node = useRef();
-// Burger State
-const [open, setOpen] = useState(false);
-// CloseClick Outside
-useOnClickOutside(node, () => setOpen(false));
 
 // useEffect 
 useEffect(() => {
@@ -30,8 +26,13 @@ useEffect(() => {
   cycleImages(BgImages, divElement, 7000);
 }, []);
 
+// Burger State
+const [open, setOpen] = useState(false);
 
+// Close Menu when outside click
+useOnClickOutside(node, () => setOpen(false));
 
+// Prevent Page Scrolling When Menu is open
 if (open === true) {
   const scrollY = document.documentElement.style.getPropertyValue('--scroll-y');
   const body = document.body;
@@ -67,12 +68,45 @@ window.addEventListener('scroll', () => {
           <div className='small-adress'><span>luxury cars -</span> 64, rue du prestige 75116 Paris</div>
           <nav className='navdesk'>
           <NavLink activeClassName='activeBg' exact to ='/'>Accueil</NavLink>
+          <Scroll
+          activeClass='active'
+          to='middle'
+          spy={true}
+          smooth={true}
+          >
           <NavLink activeClassName='activeBg' exact to ='/cars'>Vehicules</NavLink>
-          <NavLink activeClassName='activeBg' exact to ='/services'>Services</NavLink>
+          </Scroll>
+          <Scroll
+          activeClass='active'
+          to='middle'
+          spy={true}
+          smooth={true}
+          >
           <NavLink activeClassName='activeBg' exact to ='/workshop'>Atelier</NavLink>
-          <NavLink activeClassName='activeBg' exact to ='/actu'>Actualites</NavLink>
+          </Scroll>
+          <Scroll
+          activeClass='active'
+          to='middle'
+          spy={true}
+          smooth={true}
+          ><NavLink activeClassName='activeBg' exact to ='/actuality'>Actualites</NavLink>
+          </Scroll>
+          <Scroll
+          activeClass='active'
+          to='middle'
+          spy={true}
+          smooth={true}
+          >
           <NavLink activeClassName='activeBg' exact to ='/partner'>Partenaires</NavLink>
-          <NavLink activeClassName='activeBg' exact to ='/contact'>Contact</NavLink>
+          </Scroll>
+          <Scroll
+          activeClass='active'
+          to='middle'
+          spy={true}
+          smooth={true}
+          >
+            <NavLink activeClassName='activeBg' exact to ='/contact'>Contact</NavLink>
+          </Scroll>
           </nav>
         </div>
         <div className='logo'>    

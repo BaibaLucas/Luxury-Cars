@@ -1,0 +1,62 @@
+.cars {
+  background-image: url('../../assets/images/carbonfiber.jpg');
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+.cars-container{
+  color: $off-white;
+  padding: 2rem;
+  .easyreturn {
+    .easyreturntext {
+      a{
+        color: $gold;
+        font-size: 0.8rem;
+        @include media('>small'){
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+  .indexDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    @include media('>small'){
+    }
+    .carstitle {
+      text-transform: uppercase;
+      color: $gold;
+      letter-spacing: 1px;
+      text-align: center;
+      font-weight: 700;
+      padding: 1rem 0.5rem;
+      font-size: 1.4rem;
+      @include media('>small'){
+        font-size: 1.6rem;  
+      }
+    }
+    .all-cars{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 1rem;
+      width: 100%;
+      @include media('>small'){
+        flex-direction: row; 
+        justify-content: space-around;
+      }
+      img{
+        width: 180px;
+        height: 180px;
+        @include media('>small'){
+          width: 200px;
+          height: 200px;
+        }
+        &:hover {
+          border-radius: 500px;
+          box-shadow: 0px 0px 25px 10px rgba(255,255,255,0.5);
+        }
+      }
+    }
+  }
+}
