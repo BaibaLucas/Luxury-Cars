@@ -4,7 +4,7 @@
 
 ## About The project
 
-Novae is an example of a website created with a menu and an animated background
+Luxury-cars is an website cars-dealer created with a menu and an animated background
 
 ## Built With
 
